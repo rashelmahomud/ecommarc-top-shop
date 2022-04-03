@@ -11,7 +11,6 @@ import NoteFound from './Components/NoteFound/NoteFound';
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
       <Header></Header>
       <Routes>
         <Route path='/home' element={<Home></Home>}></Route>

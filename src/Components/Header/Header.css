@@ -1,0 +1,22 @@
+.navber{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 140px;
+}
+.shopName{
+    font-size: 22px;
+    cursor: pointer;
+}
+.nav-menu a{
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-left: 20px;
+    font-weight: bolder;
+    color: black;
+}
+.nav-menu a:hover{
+    color: orange;
+    transition: 0.3s;
+}

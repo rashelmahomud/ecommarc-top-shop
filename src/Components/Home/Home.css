@@ -1,0 +1,32 @@
+.gellery{
+    padding: 0px 140px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.gellery-info{
+    padding: 30px;
+}
+.orange{
+    color: orange;
+}
+.gellery-info h1{
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.gellery-btn{
+    border: none;
+    padding: 20px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+.gellery-btn:hover{
+    background-color: white;
+    color: black;
+}
