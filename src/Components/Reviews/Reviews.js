@@ -1,9 +1,29 @@
-import React from 'react';
+import { faStar, faStarHalf } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const Reviews = () => {
+import React from 'react';
+import './Reviews.css';
+
+const Reviews = (props) => {
+    
+ const {name,comment,picture} = props.review;
+   
+   
     return (
-        <div>
-            <h1>Reviews Page!</h1>
+        <div className='customer-Comments'>
+            
+            <img src={picture} alt="" />
+            <h2>{name}</h2>
+            <h3>{comment}</h3>
+            <div className='ratings'>
+            <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+            <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+            <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+            <FontAwesomeIcon icon={faStarHalf}></FontAwesomeIcon>
+            </div>
+        
+            
+
         </div>
     );
 };

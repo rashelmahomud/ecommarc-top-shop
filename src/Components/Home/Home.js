@@ -1,9 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import Reviews from '../Reviews/Reviews';
 import './Home.css';
 
 const Home = () => {
+
+    const [reviews, setReviews] = useState([]);
+
+    useEffect(  () => {
+        fetch('data.json')
+        .then(res => res.json())
+        .then(data => setReviews(data))
+    },[])
+
     return (
-        <div className='gellery'>
+       <div>
+            <div className='gellery'>
             
             <div className='gellery-info'>
                 <h1 className='orange'>Chosec your Daymond Ring</h1>
@@ -16,6 +27,19 @@ const Home = () => {
                 <img src="daymond.jpg" alt="" />
             </div>
         </div>
+
+        <h1 className='review-title'>Customer Reviews!</h1>
+      
+        <div className='customer-reviews'>
+        {
+            reviews.map(review => <Reviews key={review.id} review={review}></Reviews>)
+        }
+
+
+
+        </div>
+
+       </div>
     );
 };
 

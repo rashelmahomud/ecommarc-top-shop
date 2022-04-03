@@ -4,6 +4,7 @@
     grid-template-columns: 3fr 1fr;
     margin-top: 50px;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .gellery-info{
@@ -17,6 +18,10 @@
     font-weight: 900;
 }
 
+.review-title{
+    margin-bottom: 80px;
+}
+
 .gellery-btn{
     border: none;
     padding: 20px 40px;
@@ -24,9 +29,18 @@
     font-weight: bold;
     cursor: pointer;
     border-radius: 10px;
+    background-color: #1a1918;
 
 }
 .gellery-btn:hover{
     background-color: white;
     color: black;
+}
+
+.customer-reviews {
+   
+    margin: 0px 140px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 80px;
 }
