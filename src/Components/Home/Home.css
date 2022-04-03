@@ -44,3 +44,20 @@
     grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 80px;
 }
+
+
+button.reviews-see {
+    padding: 10px 20px;
+    border: navajowhite;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 50px;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+button.reviews-see:hover{
+    background-color: black;
+    color: wheat;
+}

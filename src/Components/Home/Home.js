@@ -31,13 +31,19 @@ const Home = () => {
         <h1 className='review-title'>Customer Reviews!</h1>
       
         <div className='customer-reviews'>
+            
         {
-            reviews.map(review => <Reviews key={review.id} review={review}></Reviews>)
+            reviews.map(review => <Reviews
+                 key={review.id}
+                  review={review}
+
+                  ></Reviews>)
         }
-
-
-
+  
         </div>
+
+        <button className='reviews-see'>See All Reviews</button>
+
 
        </div>
     );
