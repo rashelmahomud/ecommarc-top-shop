@@ -25,4 +25,5 @@
     position: sticky;
     top: 0;
     background: #f8f8f8;
+    z-index: 9999;
 }
