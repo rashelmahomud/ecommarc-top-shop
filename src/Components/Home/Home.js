@@ -13,6 +13,7 @@ const Home = () => {
     },[])
 
     return (
+
        <div>
             <div className='gellery'>
             
@@ -38,6 +39,7 @@ const Home = () => {
                   review={review}
 
                   ></Reviews>)
+
         }
   
         </div>

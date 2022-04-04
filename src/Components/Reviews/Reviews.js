@@ -5,8 +5,12 @@ import React from 'react';
 import './Reviews.css';
 
 const Reviews = (props) => {
-    
+  
+    // if(!props.reviews){
+    //     return <div></div>
+    // }
  const {name,comment,picture} = props.review;
+
    
    
     return (
