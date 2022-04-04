@@ -46,7 +46,7 @@ const Dashboard = () => {
     return (
         <div className='chart'>
            <div className='bar-chart'>
-                <h1>Bar Chart</h1>
+                <h1>INVESMENT VS REVINUE</h1>
 
                 <BarChart width={750} height={250} data={data}>
                 <CartesianGrid strokeDasharray="3 3" />
@@ -62,16 +62,16 @@ const Dashboard = () => {
                 </BarChart>
            </div>
            <div className='paiChart'>
+               <h1>INVESMENT VS REVINUE</h1>
 
                <PieChart width={730} height={250}>
                <Tooltip />
                <Legend />
-              
-
                    <Pie data={data} dataKey={'month'} ></Pie>
-                   <Pie data={data} dataKey="revenue"  outerRadius={100} fill="#8884d8" />
-                   <Pie data={data} dataKey="investment" outerRadius={100} fill="#8884d8" />
+                   <Pie data={data} dataKey="revenue"  outerRadius={80} fill="#8884d8" />
+                   <Pie data={data} dataKey="investment" outerRadius={100} fill="#82ca9d" label />
                    <Pie data={data} dataKey={'sell'}></Pie>
+                   
                </PieChart>
 
            </div>
