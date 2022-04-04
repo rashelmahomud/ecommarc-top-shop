@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Reviews from '../Reviews/Reviews';
 
 import './Home.css';
@@ -12,7 +13,7 @@ const Home = () => {
             <div className='gellery-info'>
                 <h1 className='orange'>Chosec your Daymond Ring</h1>
                 <h1 >Your Fancy Daimond Ring</h1>
-                <p>adipisicing elit. Necessitatibus, vero quam. Numquam quos repellat nam vero, delectus natus mollitia? Eligendi ipsa neque aspernatur dolor dolorum voluptatibus eius qui. Voluptatum, non.</p>
+                <p>This is a Excellent Shop and excellent all Product this site. Top Shop is a Every Product discoutly sells and lowers cost and best service this site with. its 10 years old shop and all years best service and gentelly all worker and best service.</p>
                 <button className='orange gellery-btn'>Live Demu</button>
             </div>
 
@@ -28,7 +29,10 @@ const Home = () => {
   
         </div>
 
-        <button  className='reviews-see'>See All Reviews</button>
+        <div className='reviews-see'>
+            <Link to='/reviews'>See All Reviews</Link>
+            
+        </div>
 
 
        </div>
