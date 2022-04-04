@@ -1,16 +1,8 @@
-import React, { useEffect, useState } from 'react';
 import Reviews from '../Reviews/Reviews';
+
 import './Home.css';
 
 const Home = () => {
-
-    const [reviews, setReviews] = useState([]);
-
-    useEffect(  () => {
-        fetch('data.json')
-        .then(res => res.json())
-        .then(data => setReviews(data))
-    },[])
 
     return (
 
@@ -32,19 +24,11 @@ const Home = () => {
         <h1 className='review-title'>Customer Reviews!</h1>
       
         <div className='customer-reviews'>
-            
-        {
-            reviews.map(review => <Reviews
-                 key={review.id}
-                  review={review}
-
-                  ></Reviews>)
-
-        }
+           <Reviews></Reviews>
   
         </div>
 
-        <button className='reviews-see'>See All Reviews</button>
+        <button  className='reviews-see'>See All Reviews</button>
 
 
        </div>

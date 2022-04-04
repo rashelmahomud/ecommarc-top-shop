@@ -1,34 +1,33 @@
-import { faStar, faStarHalf } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import React from 'react';
+import { useEffect, useState } from 'react';
+import Review from '../Review/Review';
 import './Reviews.css';
 
-const Reviews = (props) => {
-  
-    // if(!props.reviews){
-    //     return <div></div>
-    // }
- const {name,comment,picture} = props.review;
+const Reviews = () => { 
 
-   
+    const [reviews, setReviews] = useState([]);
+
+    useEffect(  () => {
+        fetch('data.json')
+        .then(res => res.json())
+        .then(data => setReviews(data))
+    },[])
    
     return (
-        <div className='customer-Comments'>
-            
-            <img src={picture} alt="" />
-            <h2>{name}</h2>
-            <h3>{comment}</h3>
-            <div className='ratings'>
-            <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
-            <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
-            <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
-            <FontAwesomeIcon icon={faStarHalf}></FontAwesomeIcon>
-            </div>
-        
-            
 
-        </div>
+ 
+        <div className='customer-Comments'>
+        
+        {
+          reviews.map(review => <Review
+              key={review.id}
+              review={review}
+          ></Review>)
+
+      }
+
+      </div>
+
         
 
     );

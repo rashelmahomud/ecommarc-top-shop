@@ -20,3 +20,9 @@
     color: orange;
     transition: 0.3s;
 }
+
+.navber {
+    position: sticky;
+    top: 0;
+    background: #f8f8f8;
+}

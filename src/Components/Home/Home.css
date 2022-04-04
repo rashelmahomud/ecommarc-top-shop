@@ -37,13 +37,13 @@
     color: black;
 }
 
-.customer-reviews {
+/* .customer-reviews {
    
     margin: 0px 140px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 80px;
-}
+} */
 
 
 button.reviews-see {
@@ -60,4 +60,13 @@ button.reviews-see {
 button.reviews-see:hover{
     background-color: black;
     color: wheat;
+}
+.customer-Comments {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0px 140px; 
+}
+.customer-Comment {
+    margin: 20px;
+    padding: 15px;
 }
